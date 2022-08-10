@@ -495,13 +495,16 @@ h3.my-profession {
 .about .about-content .timeline .timeline-item {
     position: relative;
     padding-left: 37px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
     text-align: justify;
+    
 }
 
-.about .about-content .timeline .timeline-item:last-child {
+/* .about .about-content .timeline .timeline-item:last-child {
     padding-bottom: 0;
-}
+} */
 
 .about .about-content .timeline .timeline-item::before {
     content: '';
