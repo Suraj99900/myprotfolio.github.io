@@ -755,6 +755,49 @@ h3.my-profession {
     position: relative;
     margin-bottom: 50px;
 }
+.gallery .banner-box .caption-box{
+    position: absolute;
+    bottom: 10%;
+    left: 0%;
+    right: 0%;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: var(--skin-color);
+    cursor: pointer;
+    flex-wrap: wrap;
+    padding: 0 25px;
+}
+
+.gallery .banner-box .caption-box.anim{
+    animation-name: anim;
+    animation-duration: 1s;
+}
+
+@keyframes anim {
+    0%{
+        transform: translate(0% ,50%);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0% ,0%);
+        opacity: 0.7;
+    }
+}
+
+.gallery .banner-box .caption-box h2{
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+.gallery .banner-box .caption-box h3{
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
 .gallery .banner-box .slider-img{
     width: 100%;
     border: 1px solid var(--bg-black-50);
