@@ -188,3 +188,13 @@ window.onload = () => {
         }
     }
 }
+
+// FAQ section 
+
+let faq_items = document.querySelectorAll(".faq_items");
+
+faq_items.forEach(faq => {
+        faq.addEventListener('click',() =>{
+            faq.classList.toggle("active");
+        })
+});
