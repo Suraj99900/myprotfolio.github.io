@@ -74,6 +74,8 @@ let left_chng = document.querySelector(".banner-left");
 let right_chng = document.querySelector(".banner-right");
 let banner_img = document.getElementById("banner_img");
 
+let anim = document.querySelector(".caption-box");
+
 var myImages = [
     "img/1_.jpg",
     "img/2_.jpg",
@@ -84,6 +86,7 @@ var myImages = [
 var number = 0;
 
 function changeImgRight() {
+    add_Anim();
     switch (number) {
         case 0:
             banner_img.src = myImages[number];
@@ -91,14 +94,17 @@ function changeImgRight() {
             break;
         case 1:
             banner_img.src = myImages[number];
+            
             number++;
             break;
         case 2:
             banner_img.src = myImages[number];
+           
             number++;
             break;
         case 3:
             banner_img.src = myImages[number];
+           
             number++;
             break;
         default:
@@ -106,11 +112,11 @@ function changeImgRight() {
             banner_img.src = myImages[number];
             break;
     }
-
 }
 
 
 function changeImgLeft() {
+    add_Anim();
     switch (number) {
         case 0:
             banner_img.src = myImages[number];
@@ -118,14 +124,17 @@ function changeImgLeft() {
             break;
         case 1:
             banner_img.src = myImages[number];
+           
             number--;
             break;
         case 2:
             banner_img.src = myImages[number];
+            
             number--;
             break;
         case 3:
             banner_img.src = myImages[number];
+            
             number--;
             break;
         default:
@@ -136,6 +145,18 @@ function changeImgLeft() {
 
 }
 
+function add_Anim(){
+    anim.classList.add("anim");
+}
+
+function remove_Anim(){
+    anim.classList.remove("anim");
+}
+
+setInterval(() => {
+    remove_Anim();
+}, 1000);
+
 setInterval(() => {
     changeImgRight()
 }, 2500);
@@ -143,7 +164,6 @@ setInterval(() => {
 left_chng.addEventListener('click', changeImgLeft);
 
 right_chng.addEventListener('click', changeImgRight);
-
 
 
 
