@@ -205,6 +205,7 @@ faq_items.forEach(faq => {
 let tabs = document.querySelectorAll(".tabs__toggle"),
 contents = document.querySelectorAll(".tabs__content");
 
+
 tabs.forEach((tab,index) =>{
     tab.addEventListener('click',()=>{
         contents.forEach((content) =>{
@@ -214,8 +215,11 @@ tabs.forEach((tab,index) =>{
             tab.classList.remove('is-active');
         })
         contents[index].classList.add('is-active');
-        contents[tab].classList.add('is-active');
-        console.log("working");
+        // contents[tab].classList.add('is-active');
+        for(let i=0;i< tabs.length;i++){
+            tabs[i].classList.remove("is-active-b");
+        }
+        tabs[index].classList.add('is-active-b');
     })
 }) 
 
