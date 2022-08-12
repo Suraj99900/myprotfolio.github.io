@@ -198,3 +198,26 @@ faq_items.forEach(faq => {
             faq.classList.toggle("active");
         })
 });
+
+
+// source code
+
+let tabs = document.querySelectorAll(".tabs__toggle"),
+contents = document.querySelectorAll(".tabs__content");
+
+tabs.forEach((tab,index) =>{
+    tab.addEventListener('click',()=>{
+        contents.forEach((content) =>{
+            content.classList.remove('is-active');
+        })
+        tabs.forEach((tab)=>{
+            tab.classList.remove('is-active');
+        })
+        contents[index].classList.add('is-active');
+        contents[tab].classList.add('is-active');
+        console.log("working");
+    })
+}) 
+
+
+
