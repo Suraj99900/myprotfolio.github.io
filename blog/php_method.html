@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio--blog</title>
+    <!-- bootstrap css
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
+
+    <!-- ICONSCOUT CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+    <!-- ICONSCOUT CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/variables1.css">
+    <link rel="stylesheet" href="/css/variables1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="/css/variables2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="/css/variables2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="/css/variables3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="/css/variables4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="/css/variables5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="/style-switcher.css">
+</head>
+
+<body>
+    <!-- main container start -->
+
+    <div class="main-container">
+
+        <!-- aside start  -->
+        <div class="aside">
+            <div class="logo">
+                <a href="#"><span>S</span>uraj</a>
+            </div>
+
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+
+            <ul class="nav">
+                <li><a href="/index.html#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="/index.html#about"><i class="fa fa-user"></i> About</a></li>
+                <li><a href="/blog.html"><i class="fa fa-blog"></i> Blog</a></li>
+                <li><a href="/index.html#gallery"><i class="uil uil-images"></i> Gallery</a></li>
+                <li><a href="/index.html#service"><i class="fa fa-list"></i> Services</a></li>
+                <li><a href="/index.html#portfolio"><i class="fa fa-briefcase"></i> Protfolio</a></li>
+                <li><a href="/index.html#source"><i class="uil uil-arrow"></i>Source code</a></li>
+                <li><a href="/index.html#faq"><i class="uil uil-comment-question"></i>FAQ</a></li>
+                <li><a href="/index.html#contact"><i class="fa fa-comments"></i> Contact</a></li>
+            </ul>
+        </div>
+        <!-- aside end -->
+
+
+        <!-- main content start -->
+
+        <div class="main-content">
+            <!-- blog page section start -->
+
+            <div class="blog-page section" id="blog">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>HTTP GET AND POST METHODS IN PHP</h2>
+                        </div>
+                        <div class="Date">
+                            <span>Last Update:-14/08/2022</span>
+                            <span>Author Name:- Suraj</span>
+                        </div>
+                    </div>
+                    <div class="data-content padd-15">
+                        <div class="row">
+                            <div class="img-box padd-15">
+                                <img src="/img/php_blog.jpg" alt="">
+                            </div>
+                            <div class="info-data padd-15">
+                                <p>
+                                    Php stands for Hypertext preprocessor. Php is a powerful and widely-used open source
+                                    service -side programming language to write dynamically generated web-page. php is
+                                    executed on service and the result is sent to the client browser as a plain html.php
+                                    is helpful for the Beginners web-Developer purpose . It helps to easily understand
+                                    the mechanism of server side scripting language working. Php is an “HTML -embedded
+                                    scripting language primarily used for dynamic web application”.Most of the php
+                                    syntax is similar to the c,java,perl programming language . It is an open source
+                                    language and runs most of the operating system and most web-servers.php perform
+                                    system function i.e from file on system it can create ,open, read,write and close
+                                    them all function used in php.
+                                </p>
+
+                                <p>
+                                    The two <b>get</b> and <b>post</b> methods are used to send the data from html
+                                    control to a php script on the server. Url is used to specify the location ,which
+                                    helps the browser to send the data mention action attribute of a form. Php script
+                                    handles both displaying html tag and reading data from html control when the submit
+                                    button is click by the user .
+                                </p>
+
+                                <div class="blog_img">
+                                    <img src="/img/php_img_1.png">
+                                </div>
+
+                                <h3>Browser Role - Get and Post Methods</h3>
+
+                                <p>
+                                    Browsers use one of the two http <b>(Hypertext transfer protocol)</b> methods -
+                                    <b>Get</b> and <b>Post</b>
+                                    to communicate with the server . Both methods used to pass the information
+                                    differently to the server.
+                                </p>
+
+                                <h3>(A) GET Methods</h3>
+                                <p>
+                                    The data in the Get method is sent as an url parameter in the pair of names and the
+                                    value is separated by ampersand (&).
+                                </p>
+
+                                <h4>
+                                    Example:- Url of Get data look like this:
+                                </h4>
+                                <div class="s-box">
+                                    http://www.localhost/suraj/index.php?name=suraj&password=joker123.
+                                </div>
+
+                                <p>
+                                    The name and age is the parameter of the Get url ; suraj and joker123 is a value of
+                                    the parameter which is sent through the url.
+                                    More than one parameter=value can be embedded in the url and separated through the
+                                    ampersands (&).
+                                    Only simple text values can be sent through the Get method.
+                                </p>
+                                <div class="blog_img">
+                                    <img src="/img/php_img_2.png">
+                                </div>
+
+                                <p>
+                                    Super global variable $_GET is used to access all the information sent through an
+                                    html form using get method.
+                                </p>
+                                <h4>
+                                    Syntax:
+                                </h4>
+                                <div class="s-box">
+                                    $_GET['variable_name'];
+                                </div>
+                                <p>
+                                    Where we can say that “$_GET[...]” is the php array and “variable_name” is the URL
+                                    variable name.
+                                </p>
+
+                                <h4>
+                                    Example :-Student.php
+                                </h4>
+                                <div class="blog_img">
+                                    <img src="/img/php_img_4.png">
+                                </div>
+                                <h4>
+                                    Output:
+                                </h4>
+                                <div class="blog_img">
+                                    <img src="/img/php_img_3.png">
+                                </div>
+
+                                <h3>(B) POST Methods </h3>
+                                <p>
+                                    The data in the post method is sent through the server in the form of package
+                                    In separated communication with the processing script.
+                                    The data which is sent through the server is not visible to the user in the URL
+                                    query string as it is visible in the GET method .
+                                    The post method can be used to send the much larger data, information and file to
+                                    the server ,because it is secure.
+                                </p>
+
+                                <p>
+                                    Super global variable $_POST is used to access all the information sent through an
+                                    html form using the post method.
+                                </p>
+
+                                <h4>
+                                    Syntax:
+                                </h4>
+                                <div class="s-box">
+                                    $_POST['variable_name'];
+                                </div>
+                                <p>
+                                    Where we can say that “$_POST[...]” is the php array and “variable_name” is the URL
+                                    variable name.
+                                </p>
+                                <h4>
+                                    Example :-Student.php
+                                </h4>
+                                <div class="blog_img">
+                                    <img src="/img/php_img_5.png">
+                                </div>
+                                <h4>
+                                    Output:
+                                </h4>
+                                <div class="blog_img">
+                                    <img src="/img/php_img_6.png">
+                                </div>
+
+                                <h3>Difference between GET and POST Methods in PHP</h3>
+
+                                <table class="table padd-15">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Sr_no</th>
+                                            <th scope="col">GET method</th>
+                                            <th scope="col">POST method</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>
+                                                The information is sent through the form with the GET method and is
+                                                visible to everyone (all variable names and values are displayed in the
+                                                url).
+                                            </td>
+                                            <td>
+                                                The information sent through the form with the POST method is invisible
+                                                to everyone (all variable names and values are embedded within the body
+                                                of the HTTP request).
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>
+                                                Get method can send a limited amount of data in the url that is 2048
+                                                characters.
+                                            </td>
+                                            <td>
+                                                Post has no limit on the amount of information to send
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>
+                                                $_GEt is an array of variables passed to the current script via the url
+                                                parameters.
+                                            </td>
+                                            <td>
+                                                $_POST is an array of variables passed to the current script of the http
+                                                POST method.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>
+                                                Can be bookmark
+                                            </td>
+                                            <td>
+                                                Cannot be bookmark
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>
+                                                Can be cached
+                                            </td>
+                                            <td>
+                                                Not cached
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>
+                                                Parameter is remain in the browser history
+                                            </td>
+                                            <td>
+                                                Parameter are not saved in the browser history
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>Get is less secure to the POST because passed information is visible to
+                                                the user</td>
+                                            <td>
+                                                POST method is more secure than the GET becaused parameters are not
+                                                saved in the browser history.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>
+                                                Get methods are not to be used while we pass or send the password or
+                                                sensitive information.
+                                            </td>
+                                            <td>
+                                                POST methods are used while we pass or send the password or sensitive
+                                                information .
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- blog page section end -->
+
+
+        </div>
+
+        <!-- main content end -->
+
+    </div>
+    <!-- main container end -->
+
+
+
+    <!-- style switcher start -->
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas "></i>
+        </div>
+        <h4>Theme Color</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActivityStyle('color-1')"></span>
+            <span class="color-2" onclick="setActivityStyle('color-2')"></span>
+            <span class="color-3" onclick="setActivityStyle('color-3')"></span>
+            <span class="color-4" onclick="setActivityStyle('color-4')"></span>
+            <span class="color-5" onclick="setActivityStyle('color-5')"></span>
+        </div>
+    </div>
+
+    <!-- style switcher end -->
+
+    <!-- manu toggler start -->
+
+    <div class="toggler-box">
+        <div class="toggler-open icon">
+            <i class="uil uil-angle-right-b"></i>
+        </div>
+        <div class="toggler-close icon">
+            <i class="uil uil-angle-left-b"></i>
+        </div>
+    </div>
+
+    <!-- manu toggler end -->
+
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+             -->
+    <script src="/js/main.js"></script>
+    <script src="/js/style-switcher-js.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
