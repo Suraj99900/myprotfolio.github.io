@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio--blog</title>
+    <!-- bootstrap css
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
+
+    <!-- ICONSCOUT CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+    <!-- ICONSCOUT CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/variables1.css">
+    <link rel="stylesheet" href="/css/variables1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="/css/variables2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="/css/variables2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="/css/variables3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="/css/variables4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="/css/variables5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="/style-switcher.css">
+</head>
+
+<body>
+    <!-- main container start -->
+
+    <div class="main-container">
+
+        <!-- aside start  -->
+        <div class="aside">
+            <div class="logo">
+                <a href="#"><span>S</span>uraj</a>
+            </div>
+
+            <div class="nav-toggler">
+                <span></span>
+            </div>
+
+            <ul class="nav">
+                <li><a href="/index.html#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="/index.html#about"><i class="fa fa-user"></i> About</a></li>
+                <li><a href="/blog.html"><i class="fa fa-blog"></i> Blog</a></li>
+                <li><a href="/index.html#gallery"><i class="uil uil-images"></i> Gallery</a></li>
+                <li><a href="/index.html#service"><i class="fa fa-list"></i> Services</a></li>
+                <li><a href="/index.html#portfolio"><i class="fa fa-briefcase"></i> Protfolio</a></li>
+                <li><a href="/index.html#source"><i class="uil uil-arrow"></i>Source code</a></li>
+                <li><a href="/index.html#faq"><i class="uil uil-comment-question"></i>FAQ</a></li>
+                <li><a href="/index.html#contact"><i class="fa fa-comments"></i> Contact</a></li>
+            </ul>
+        </div>
+        <!-- aside end -->
+
+
+        <!-- main content start -->
+
+        <div class="main-content">
+            <!-- blog page section start -->
+
+            <div class="blog-page section" id="blog">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>FUNCTION OVERLOADING AND FUNCTION OVERRIDING IN PHP</h2>
+                        </div>
+                        <div class="Date">
+                            <span>Last Update:-15/08/2022</span>
+                            <span>Author Name:- Suraj</span>
+                        </div>
+                    </div>
+                    <div class="data-content padd-15">
+                        <div class="row">
+                            <div class="img-box padd-15">
+                                <img src="/img/overloading_overriding_php_1.jpg" alt="">
+                            </div>
+                            <div class="info-data padd-15">
+                                <p>
+                                    Php is a powerful and server-side programming language, which helps in building
+                                    dynamic websites. If we are talking about the PHP language, then it is also
+                                    considered as an Oops concept. And in oops concept we have function overloading and
+                                    function overriding. Function overloading and overriding is a feature of object
+                                    oriented programming that allows to create more than one method/function with same
+                                    name but different number of parameters/arguments that is function overloading but
+                                    in case of function overriding, both parent and child The class must have the same
+                                    function name and number of arguments/parameters that the function is overriding.
+                                </p>
+
+                                <h3>Function Overloading in PHP</h3>
+
+                                <p>
+                                    In the function overloading the same function name but it contains the different
+                                    numbers of parameters/arguments and it performs different tasks. For example :-find
+                                    the area of certain shapes where radius is given then it should return area of
+                                    circle if height and width are given then it should give area of rectangle and
+                                    others.
+                                </p>
+                                <p>
+                                    But in the php function overloading is done with the help of magic function
+                                    __call(). This
+                                    Function takes function name and arguments.
+                                </p>
+                                <p>
+                                    If we perform function overloading without a magic function then error is generated
+                                    .
+                                </p>
+                                <h4>Example:-</h4>
+                                <div class="blog_img">
+                                    <img src="/img/overloading_overriding_php_2.png">
+                                </div>
+                                <h4>
+                                    OutPut:-
+                                </h4>
+                                <p><b>Fatal error:</b>Cannot redeclare text::display() in C:\xampp\htdocs\PHPT\php class
+                                    and object\index.php on line 32</p>
+
+                                <div class="s-box">
+                                    <p>Note :- From the above example we can say that function overloading is not
+                                        possible in php but with the help of magic function (__call()) we can perform
+                                        function overloading in php.
+                                    </p>
+                                </div>
+
+                                <p> There is one example of function overloading with the help of magic function
+                                    /method.</p>
+                                <div class="img-box">
+                                    <img src="/img/overloading_overriding_php_3.png">
+                                </div>
+                                <h4>Output</h4>
+                                <div class="s-box">
+                                    Area of circle:-12.56
+                                    Area of Rectangle:-10
+                                </div>
+                                <p>We have some more magic functions to perform operations that are given below.</p>
+
+                                <table class="table padd-15">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Sr_no</th>
+                                            <th scope="col">Methods</th>
+                                            <th scope="col">Description</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>__set()
+                                            </td>
+                                            <td>
+                                                triggered while initializing overloaded
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>
+                                                __get()
+                                            </td>
+                                            <td>
+                                                triggered while using overloaded Property with PHP print statements.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>
+                                                __isset()
+                                            </td>
+                                            <td>
+                                                invoked when we check overloaded properties with isset() function
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>
+                                                __unset()
+                                            </td>
+                                            <td>
+                                                invoked on using PHP unset for overloaded properties
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>
+                                                __call()
+                                            </td>
+                                            <td>
+                                                triggered while invoking overloaded methods in static context.
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+                                <h3>
+                                    Function overriding in php
+                                </h3>
+                                <p>
+                                    In function overriding, both parent and child class should have the same function
+                                    name and number of arguments. Mostly it is used to replace the parent methods in
+                                    child class. The main reason for overriding is to change the behavior of the parent
+                                    class.
+                                </p>
+                                <h4>
+                                    Example of overriding :-
+                                </h4>
+
+                                <div class="img-box">
+                                    <img src="/img/overloading_overriding_php_4.png" alt="">
+                                </div>
+
+                                <h4>
+                                    Output:-
+                                </h4>
+
+                                <div class="img-box">
+                                    <img src="/img/overloading_overriding_php_5.png" alt="">
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- blog page section end -->
+
+
+        </div>
+
+        <!-- main content end -->
+
+    </div>
+    <!-- main container end -->
+
+
+
+    <!-- style switcher start -->
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas "></i>
+        </div>
+        <h4>Theme Color</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActivityStyle('color-1')"></span>
+            <span class="color-2" onclick="setActivityStyle('color-2')"></span>
+            <span class="color-3" onclick="setActivityStyle('color-3')"></span>
+            <span class="color-4" onclick="setActivityStyle('color-4')"></span>
+            <span class="color-5" onclick="setActivityStyle('color-5')"></span>
+        </div>
+    </div>
+
+    <!-- style switcher end -->
+
+    <!-- manu toggler start -->
+
+    <div class="toggler-box">
+        <div class="toggler-open icon">
+            <i class="uil uil-angle-right-b"></i>
+        </div>
+        <div class="toggler-close icon">
+            <i class="uil uil-angle-left-b"></i>
+        </div>
+    </div>
+
+    <!-- manu toggler end -->
+
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+             -->
+    <script src="/js/main.js"></script>
+    <script src="/js/style-switcher-js.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
